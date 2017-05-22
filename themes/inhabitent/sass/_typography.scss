@@ -66,3 +66,17 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+.bold {
+	font-weight: bold;
+}
+
+.capitalize{
+	text-transform: uppercase;
+}
+
+.category{
+	color: $color_orange-brand;
+	font-family: $font_accent;
+	font-size: 1.5rem;
+}

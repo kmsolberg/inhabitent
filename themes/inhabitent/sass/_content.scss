@@ -4,6 +4,11 @@
 
 /* Posts and pages */
 
+.container {
+	width: 1120px;
+	margin: auto;
+}
+
 .sticky {
 	display: block;
 }
@@ -46,4 +51,53 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+// Footer
+
+.site-footer {
+	background-image: image-set(
+		"../../images/dark-wood.png" 1x,
+		"../../images/dark-wood@2x.png" 2x
+	);
+	height: 20rem;
+
+	ul {
+		list-style: none;
+		padding: 0 2rem;
+		margin: 0;
+		line-height: 2.5rem;
+	}
+}
+
+.site-info {
+	display: flex;
+	flex-flow: row no-wrap;
+	color: #fff;
+	justify-content: space-between;
+	height: 15rem;
+	padding-top: 3rem;
+}
+
+.footer-lists{
+	display: flex;
+}
+
+.contact-info{
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.footer-logo {
+	width: 15rem;
+	align-self: flex-start;
+}
+
+.copyright{
+	text-align: center;
+	color: #fff;
+	font-family: $font_accent;
+	padding-top: 2rem;
 }

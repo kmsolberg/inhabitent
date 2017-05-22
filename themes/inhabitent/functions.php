@@ -105,3 +105,27 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+// custom logo
+
+add_theme_support( 'custom-logo' );
+
+function inhabitent_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'inhabitent' );
+
+if ( function_exists( 'the_custom_logo' ) ) {
+    the_custom_logo();
+}
+
+$custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+if ( has_custom_logo() ) {
+        echo '<img src="/images/inhabitent-logo-tent-white.svg'. esc_url( $logo[0] ) .'">';
+} 
