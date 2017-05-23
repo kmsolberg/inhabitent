@@ -5,7 +5,7 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: #fff;
 
 	&:visited {
 		color: $color__link-visited;
@@ -13,7 +13,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color_yellow_brand;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -26,11 +26,17 @@ a {
 
 /* Menus */
 
+.menu-item {
+	padding: 0 1rem;	
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
+	font-family: $font_accent;
+	// font-size: 1.2rem;
+	color: #fff;
 	float: right;
-	width: 100%;
 
 	ul {
 		display: none;
@@ -64,6 +70,8 @@ a {
 
 			:hover > a,
 			.focus > a {
+				color: $color_yellow_brand;
+				
 			}
 
 			a:hover,

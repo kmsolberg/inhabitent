@@ -12,11 +12,6 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-				</header>
-			<?php endif; ?>
-
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -33,9 +28,26 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+		
+		<div class="shop">
+			<h1>Shop Stuff</h1>
+		</div>
+
+		<div class="journal">
+			<h1>inhabitent journal</h1>		
+			<ul>
+				<?php
+					$args = array( 'numberposts' => '3' );
+					$recent_posts = wp_get_recent_posts( $args );
+
+					foreach( $recent_posts as $recent ){
+					echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+					}
+				?>
+			</ul>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

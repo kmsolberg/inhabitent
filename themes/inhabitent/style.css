@@ -280,7 +280,8 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "novecento sans web"; }
 
 /* Copy */
 p {
@@ -461,22 +462,26 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: #fff; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #f0e4d1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
 /* Menus */
+.menu-item {
+  padding: 0 1rem; }
+
 .main-navigation {
   clear: both;
   display: block;
-  float: right;
-  width: 100%; }
+  font-family: "novecento sans web";
+  color: #fff;
+  float: right; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -497,6 +502,9 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
+      .main-navigation ul ul :hover > a,
+      .main-navigation ul ul .focus > a {
+        color: #f0e4d1; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -756,4 +764,63 @@ object {
 .hero {
   background: url("../../images/home-hero.jpg") no-repeat;
   background-size: cover;
-  height: 40rem; }
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+
+.home .entry-title {
+  display: none; }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.journal ul {
+  list-style: none; }
+
+.journal a {
+  color: #248A83; }
+
+/* About*/
+.post-22 .entry-title {
+  display: none; }
+
+.content-full-width {
+  width: 100%;
+  float: none; }
+
+#main-about {
+  width: 60%;
+  margin: auto; }
+
+.about-hero {
+  background-image: url("../../images/about-hero.jpg");
+  background-size: 100rem;
+  background-position: bottom;
+  height: 100vh;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  width: 100%; }
+  .about-hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase; }
+
+.post-22 .site-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232; }
+
+/* Sidebar */
+.widget-area {
+  float: right;
+  width: 20%; }
