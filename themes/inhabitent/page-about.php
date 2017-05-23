@@ -12,8 +12,12 @@ get_header(); ?>
 		<h1> About </h1>
 	</div>
 	<main id="main-about" class="site-main" role="main">
+		
+		<?php echo CFS()->get( 'editor' ); ?>
+		<?php echo CFS()->get( 'our_team' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
+		
 
 			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 

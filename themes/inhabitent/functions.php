@@ -129,3 +129,9 @@ $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 if ( has_custom_logo() ) {
         echo '<img src="/images/inhabitent-logo-tent-white.svg'. esc_url( $logo[0] ) .'">';
 } 
+
+function init_remove_support(){
+    $post_type = 'template, about';
+    remove_post_type_support( $post_type, 'editor');
+}
+add_action('init', 'init_remove_support',100);
