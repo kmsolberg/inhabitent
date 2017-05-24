@@ -13,8 +13,9 @@ get_header(); ?>
 	</div>
 	<main id="main-about" class="site-main" role="main">
 		
-		<?php echo CFS()->get( 'editor' ); ?>
-		<?php echo CFS()->get( 'our_team' ); ?>
+		<?php echo CFS()->get( 'editor' );
+					echo CFS()->get( 'our_team' ); 
+					echo CFS()->get( 'hero_image' );?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 		
