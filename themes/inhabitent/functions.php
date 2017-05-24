@@ -84,6 +84,15 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
  */
 function inhabitent_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
+		
+	$hero = CFS()->get( 'hero_image' );		
+	$hero_background = "
+		.about-hero {
+			background: url($hero) bottom/cover no-repeat;
+			height: 100vh;
+		}";
+
+	wp_add_inline_style( 'inhabitent-style', $hero_background );
 	
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/7f442c52d1.js', array(), '4.7.0');
 

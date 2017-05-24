@@ -12,10 +12,12 @@ get_header(); ?>
 		<h1> About </h1>
 	</div>
 	<main id="main-about" class="site-main" role="main">
+
 		
-		<?php echo CFS()->get( 'editor' );
-					echo CFS()->get( 'our_team' ); 
-					echo CFS()->get( 'hero_image' );?>
+		<h2>Our Story</h2>
+		<?php echo CFS()->get( 'editor' );?>
+		<h2>Our Team</h2>
+		<?php echo CFS()->get( 'our_team' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 		
