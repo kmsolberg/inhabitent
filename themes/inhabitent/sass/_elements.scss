@@ -68,3 +68,16 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+
+//--------------------------------------------------------------//
+
+.black-button{
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+	transition: all ease
+}
+
+.black-button:hover{
+	background-color: $color_green_brand;
+	color: white;
+}

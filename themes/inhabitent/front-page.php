@@ -32,18 +32,30 @@ get_header(); ?>
 		<div class="shop">
 			<h1>Shop Stuff</h1>
 		</div>
+		<h1>inhabitent journal</h1>	
+		<div class="journal container">	
+			<?php
+			$args = array(
+			'posts_per_page' => 3,
+			); ?>
 
-		<div class="journal">
-			<h1>inhabitent journal</h1>		
-			<ul>
-				<?php
-					$args = array( 'numberposts' => '3' );
-					$recent_posts = wp_get_recent_posts( $args );
-
-					foreach( $recent_posts as $recent ){
-					echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
-					}
-				?>
+			<?php $posts = new WP_Query( $args ); ?>
+			<?php if ( $posts->have_posts() ) : ?>
+				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+					<ul class="home-posts">
+						<?php the_post_thumbnail(); ?>
+						<div class = "post-text">
+							<li class="date"><?php the_time('F jS, Y'); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?></li>
+							<li><h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3></li>	
+							<li><a class="read-more capitalize black-button" href="<?php the_permalink() ?>">Read Entry</a></li>	
+						</div>			
+					</ul>
+				<?php endwhile; ?>
+				<?php the_posts_navigation(); ?>
+				<?php wp_reset_postdata(); ?>
+			<?php else : ?>
+						<h2>Nothing found!</h2>
+			<?php endif; ?>
 			</ul>
 		</div>
 
