@@ -39,7 +39,10 @@ get_header(); ?>
 			<!--Put Markup here-->
 			<?php foreach ($product_types as $product_type) : ?>
 				<li><?php echo $product_type->description; ?></li>
-				<li><a class="capitalize" href="<?php get_term_link($product_type); ?>"><?php echo $product_type->name; ?> stuff</a></li>
+				<li class="capitalize">
+					<a href = "<?php echo get_term_link($product_type); ?>">
+					<?php echo $product_type->name; ?> stuff</a>
+				</li>
 			<?php endforeach; ?>
 			<?php endif; ?>
 		</div>

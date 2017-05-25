@@ -27,20 +27,23 @@
 				)); 
 				if (!empty($product_types)&& !is_wp_error($product_types)) : ?>
 				<?php foreach ($product_types as $product_type) : ?>
-				<a class="capitalize" href="<?php get_term_link($product_type); ?>"><?php echo $product_type->name; ?>
+				<a class="capitalize" href = "<?php echo get_term_link($product_type); ?>">
+				<?php echo $product_type->name; ?></a>
 				<?php endforeach; ?>
 				<?php endif; ?>
 			</div>
 			
 			<ul>
 				<?php while ( have_posts() ) : the_post(); ?>
+				<li>
 				<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'medium' ); ?>
 				<?php endif; ?>
 				<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 				$<?php echo get_post_meta($post->ID, 'price', true);
 				?>
-			<ul>
+				</li>
+			</ul>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
