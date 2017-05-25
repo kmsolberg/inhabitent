@@ -48,27 +48,29 @@ function inhabitent_login_title() {
 add_filter('login_headertitle', 'inhabitent_login_title');
 
 // Change page name ---------------------------------//
-function inhabitent_change_page_name ( $query ) {
-    if (
-    ( is_post_type_archive( array( 'product' ) ) || $query->is_tax( 'product-type' ))
-    && !is_admin() 
-    && $query->is_main_query() 
-    );
-}
 
-add_action( 'get_the_archive_title', 'inhabitent_change_page_name' );
+ function inhabitent_change_archive_titles( $title ) {
+     if( is_post_type_archive( 'product' ) ) {
+         $title = 'Shop Stuff';
+     } elseif( is_tax( 'product-type' )) {
+				$title = single_term_title('', false);
+		 }
+     return $title;
+ };
 
-// Alphabatize products, limit to 16------------------//
-function change_archive_posts($query) {
-	if ( is_post_type_archive( 'product' ) ) {
-        $query->set( 'posts_per_page', 16 );
-	    $query->set( 'orderby', 'title' );
-        $query->set( 'order', 'ASC' );
-    return;
-  }
-}
+  add_filter( 'get_the_archive_title', 'inhabitent_change_archive_titles');
+ 
+ function change_archive_posts($query) {
+ 	if ( (is_post_type_archive( 'product' ) ) || is_tax( 'product-type'))  {
+      $query->set( 'posts_per_page', 16 );
+ 	    $query->set( 'orderby', 'title' );
+      $query->set( 'order', 'ASC' );
+     return;
+   }
+ }
+ 
+add_action( 'pre_get_posts', 'change_archive_posts'); 
 
-add_action( 'pre_get_posts', 'change_archive_posts');
 
 /**
  * Customize excerpt length and style.
