@@ -474,11 +474,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #fff; }
+  color: #248A83; }
   a:visited {
-    color: #fff; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: #f0e4d1; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -492,7 +492,7 @@ a {
   clear: both;
   display: block;
   font-family: "novecento sans web";
-  color: #fff;
+  color: #248A83;
   float: right; }
   .main-navigation ul {
     display: none;
@@ -516,7 +516,7 @@ a {
         width: 200px; }
       .main-navigation ul ul :hover > a,
       .main-navigation ul ul .focus > a {
-        color: #f0e4d1; }
+        color: #2f1339; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }

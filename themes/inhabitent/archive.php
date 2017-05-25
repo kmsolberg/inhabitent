@@ -22,9 +22,25 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php $args = array(
+					'category'         => '',
+					'category_name'    => '',
+					'orderby'          => 'date',
+					'order'            => 'DESC',
+					'include'          => '',
+					'exclude'          => 'content',
+					'meta_key'         => '',
+					'meta_value'       => '',
+					'post_type'        => 'post',
+					'post_mime_type'   => '',
+					'post_parent'      => '',
+					'author'	   => '',
+					'author_name'	   => '',
+					'post_status'      => 'publish',
+					'suppress_filters' => true 
+				);
+				$posts_array = get_posts( $args ); ?>
+
 
 			<?php endwhile; ?>
 

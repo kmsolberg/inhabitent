@@ -46,3 +46,21 @@ function inhabitent_login_title() {
 	return 'Inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_post_type_archive() ) {
+        $title = 'Shop Stuff';
+    }
+    return $title;
+});
+
+function change_archive_posts($query) {
+	if ( is_post_type_archive( 'product' ) ) {
+        $query->set( 'posts_per_page', 16 );
+	    $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    return;
+  }
+}
+
+add_action( 'pre_get_posts', 'change_archive_posts');

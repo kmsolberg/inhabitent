@@ -29,19 +29,29 @@ get_header(); ?>
 
 		<?php endif; ?>
 		
-		<div class="shop">
+		<div class="shop container">
 			<h1>Shop Stuff</h1>
+			<?php $product_types = get_terms(array (
+				'taxonomy' => 'product-type',
+				'hide_empty' => false
+			)); 
+			if (!empty($product_types)&& !is_wp_error($product_types)) : ?>
+			<!--Put Markup here-->
+			<?php foreach ($product_types as $product_type) : ?>
+				<li><?php echo $product_type->description; ?></li>
+				<li><a class="capitalize" href="<?php get_term_link($product_type); ?>"><?php echo $product_type->name; ?> stuff</a></li>
+			<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
-		<h1>inhabitent journal</h1>	
-		<div class="journal container">	
-			<?php
-			$args = array(
-			'posts_per_page' => 3,
-			); ?>
 
-			<?php $posts = new WP_Query( $args ); ?>
-			<?php if ( $posts->have_posts() ) : ?>
-				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+		<h1>inhabitent journal</h1>	
+		
+		<div class="journal container">	
+				<?php
+				$args = array( 'posts_per_page' => 3);
+
+				$myposts = get_posts( $args );
+				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 					<ul class="home-posts">
 						<?php the_post_thumbnail(); ?>
 						<div class = "post-text">
@@ -50,13 +60,8 @@ get_header(); ?>
 							<li><a class="read-more capitalize black-button" href="<?php the_permalink() ?>">Read Entry</a></li>	
 						</div>			
 					</ul>
-				<?php endwhile; ?>
-				<?php the_posts_navigation(); ?>
-				<?php wp_reset_postdata(); ?>
-			<?php else : ?>
-						<h2>Nothing found!</h2>
-			<?php endif; ?>
-			</ul>
+				<?php endforeach; 
+				wp_reset_postdata();?>
 		</div>
 
 		</main><!-- #main -->
