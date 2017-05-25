@@ -557,6 +557,14 @@ a {
   text-align: right;
   width: 50%; }
 
+.search-field {
+  display: none;
+  width: 200;
+  overflow: hidden; }
+
+.icon-search {
+  cursor: pointer; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
