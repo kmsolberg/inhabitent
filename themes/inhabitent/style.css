@@ -343,7 +343,8 @@ h3 {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0 !important; }
 
 *,
 *:before,
@@ -490,10 +491,13 @@ a {
 
 .main-navigation {
   clear: both;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "novecento sans web";
   color: #248A83;
-  float: right; }
+  float: right;
+  -ms-flex-align: center;
+      align-items: center; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -512,8 +516,6 @@ a {
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
       .main-navigation ul ul :hover > a,
       .main-navigation ul ul .focus > a {
         color: #2f1339; }
@@ -559,23 +561,43 @@ a {
 
 .search-field {
   display: none;
-  overflow: hidden; }
+  overflow: hidden;
+  border: none;
+  background: none; }
+  .search-field :focus {
+    outline: none; }
 
 .icon-search {
   cursor: pointer;
   color: #248A83; }
 
-fieldset {
+.search-submit {
+  display: inline; }
+
+.search-form fieldset {
   border: none; }
+
+.search-form input {
+  border: none;
+  outline: none; }
 
 .menu {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 2rem;
+  padding: 0.5rem 0; }
 
 .logo {
-  height: 2rem; }
+  height: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+  .logo img {
+    height: 2rem; }
 
 .site-header {
   position: fixed;

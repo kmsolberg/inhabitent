@@ -32,11 +32,12 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
 	font-family: $font_accent;
 	// font-size: 1.2rem;
 	color: $color_green_brand;
 	float: right;
+	align-items: center;
 
 	ul {
 		display: none;
@@ -64,9 +65,9 @@ a {
 				}
 			}
 
-			a {
-				width: 200px;
-			}
+			// a {
+			// 	width: 200px;
+			// }
 
 			:hover > a,
 			.focus > a {
@@ -141,7 +142,12 @@ a {
 
 .search-field{ 
 	display: none;
-	overflow:hidden; 
+	overflow:hidden;
+	border: none;
+	background: none;
+	:focus{
+		outline: none;
+	}
 }
 
 .icon-search{
@@ -149,17 +155,34 @@ a {
 	color: $color_green_brand;
 }
 
-fieldset{
+.search-submit{
+	display: inline;
+}
+
+.search-form{
+	fieldset{
 	border: none;
+	}
+	input{
+		border: none;
+		outline: none;
+	}
 }
 
 .menu {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	height: 2rem;
+	padding: 0.5rem 0;
 }
 
 .logo{
 	height: 2rem;
+	align-self: center;
+	img{
+		height: 2rem;
+	}
 }
 
 .site-header{
