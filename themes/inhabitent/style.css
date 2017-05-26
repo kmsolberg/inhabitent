@@ -559,11 +559,35 @@ a {
 
 .search-field {
   display: none;
-  width: 200;
   overflow: hidden; }
 
 .icon-search {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #248A83; }
+
+fieldset {
+  border: none; }
+
+.menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.logo {
+  height: 2rem; }
+
+.site-header {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1; }
+
+.menu-word {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
 
 /*--------------------------------------------------------------
 # Accessibility

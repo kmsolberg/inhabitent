@@ -141,9 +141,35 @@ a {
 
 .search-field{ 
 	display: none;
-	width: 200;overflow:hidden; 
+	overflow:hidden; 
 }
 
 .icon-search{
 	cursor: pointer;
+	color: $color_green_brand;
+}
+
+fieldset{
+	border: none;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+}
+
+.logo{
+	height: 2rem;
+}
+
+.site-header{
+	position: fixed;
+	background:rgba(255,255,255, 0.9);
+	width: 100%;
+	border-bottom: $border-grey;
+}
+
+.menu-word{
+	display: flex;
+	flex-flow: row nowrap;
 }
