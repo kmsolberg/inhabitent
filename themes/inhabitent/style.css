@@ -343,8 +343,7 @@ h3 {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem;
-  margin: 0 !important; }
+  font-size: 1rem; }
 
 *,
 *:before,
@@ -920,4 +919,22 @@ a.read-more {
   position: absolute;
   text-shadow: 1px 1px 2px #323232; }
 
-/* Sidebar */
+/* SIDEBAR */
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin: auto; }
+
+.widget-area {
+  border-left: 1px solid #e1e1e1;
+  padding-left: 3rem;
+  -ms-flex: 0 0 27%;
+      flex: 0 0 27%; }
+
+.widget li {
+  list-style: none; }
+
+.widget ul {
+  padding: 0;
+  margin: 0; }
