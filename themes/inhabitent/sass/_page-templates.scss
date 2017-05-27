@@ -117,15 +117,20 @@ a.read-more{
 
 .site-content{
   display: flex;
-  // flex-direction: row-reverse;
   width: 1120px;
   margin: auto;
+}
+
+.content-area {
+  padding-top: 5rem;
 }
 
 .widget-area{
   border-left: $border_grey;
   padding-left: 3rem;
   flex: 0 0 27%;
+  padding-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .widget li{

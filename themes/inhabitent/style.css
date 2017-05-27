@@ -602,7 +602,8 @@ a {
   position: fixed;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 1000; }
 
 .menu-word {
   display: -ms-flexbox;
@@ -926,11 +927,16 @@ a.read-more {
   width: 1120px;
   margin: auto; }
 
+.content-area {
+  padding-top: 5rem; }
+
 .widget-area {
   border-left: 1px solid #e1e1e1;
   padding-left: 3rem;
   -ms-flex: 0 0 27%;
-      flex: 0 0 27%; }
+      flex: 0 0 27%;
+  padding-top: 3rem;
+  margin-top: 3.5rem; }
 
 .widget li {
   list-style: none; }
