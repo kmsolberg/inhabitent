@@ -465,7 +465,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83; }
+  color: #248A83;
+  text-decoration: none; }
   a:visited {
     color: #248A83; }
   a:hover, a:focus, a:active {
@@ -720,7 +721,6 @@ a {
   height: 20rem; }
   .site-footer ul {
     list-style: none;
-    padding: 0 2rem;
     margin: 0;
     line-height: 2.5rem; }
 
@@ -739,9 +739,11 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
-.contact-info a {
-  text-decoration: none;
-  color: #fff; }
+.contact-info {
+  margin-right: 2rem; }
+  .contact-info a {
+    text-decoration: none;
+    color: #fff; }
 
 .footer-logo {
   width: 15rem;
@@ -753,6 +755,16 @@ a {
   color: #fff;
   font-family: "novecento sans web";
   padding-top: 2rem; }
+
+.social-media {
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "novecento sans web"; }
+  .social-media p {
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    transition: all ease; }
 
 /*--------------------------------------------------------------
 # Media
@@ -999,7 +1011,9 @@ a.read-more {
   font-size: 2.2rem;
   line-height: 2.5rem;
   padding: .5rem 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: white;
+  text-align: left; }
   .entry-title a {
     text-decoration: none;
     color: white; }

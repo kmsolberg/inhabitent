@@ -63,7 +63,6 @@
 	height: 20rem;
 	ul {
 		list-style: none;
-		padding: 0 2rem;
 		margin: 0;
 		line-height: 2.5rem;
 	}
@@ -83,6 +82,7 @@
 }
 
 .contact-info{
+	margin-right: 2rem;
 	a {
 		text-decoration: none;
 		color: #fff;
@@ -99,4 +99,13 @@
 	color: #fff;
 	font-family: $font_accent;
 	padding-top: 2rem;
+}
+
+.social-media{
+	display: flex;
+	text-transform: uppercase;
+	font-family: $font_accent;
+	p{
+		@include black-button;
+	}
 }
