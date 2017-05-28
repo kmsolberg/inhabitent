@@ -29,20 +29,23 @@ get_header(); ?>
 
 		<?php endif; ?>
 		
+		<h1>Shop Stuff</h1>		
 		<div class="shop container">
-			<h1>Shop Stuff</h1>
 			<?php $product_types = get_terms(array (
 				'taxonomy' => 'product-type',
 				'hide_empty' => false
 			)); 
 			if (!empty($product_types)&& !is_wp_error($product_types)) : ?>
 			<!--Put Markup here-->
+			
 			<?php foreach ($product_types as $product_type) : ?>
-				<li><?php echo $product_type->description; ?></li>
-				<li class="capitalize">
-					<a href = "<?php echo get_term_link($product_type); ?>">
-					<?php echo $product_type->name; ?> stuff</a>
-				</li>
+				<ul class="shop-item">
+					<li><?php echo $product_type->description; ?></li>
+					<li class="capitalize button-green">
+						<a href = "<?php echo get_term_link($product_type); ?>">
+						<?php echo $product_type->name; ?> stuff</a>
+					</li>
+				</ul>
 			<?php endforeach; ?>
 			<?php endif; ?>
 		</div>
