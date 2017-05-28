@@ -16,17 +16,24 @@
       <?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
 		</header>
 		
-		<ul>
-			<?php while ( have_posts() ) : the_post(); ?>
-			<li>
-			<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'medium' ); ?>
-			<?php endif; ?>
-			<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-			$<?php echo get_post_meta($post->ID, 'price', true); ?>
-			</li>
-		</ul>
-		<?php endwhile; ?>
+		<ul class="product-grid">
+				<?php while ( have_posts() ) : the_post(); ?>
+				<li>
+					<div class="product-image">
+						<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'medium' ); ?>
+						<?php endif; ?>
+					</div>
+					<div class = "title-price">
+						<?php the_title( '<p class="product-name">', '</p>' ); ?>
+						<span class="price">$<?php echo get_post_meta($post->ID, 'price', true); ?></span>
+						<div class="elipses">
+							<p>.............................</p>
+						</div>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>	
 
 		<?php the_posts_navigation(); ?>
 

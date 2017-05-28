@@ -40,6 +40,7 @@ get_header(); ?>
 			
 			<?php foreach ($product_types as $product_type) : ?>
 				<ul class="shop-item">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/images/<?php echo $product_type-> name; ?>.svg">
 					<li><?php echo $product_type->description; ?></li>
 					<li class="capitalize button-green">
 						<a href = "<?php echo get_term_link($product_type); ?>">

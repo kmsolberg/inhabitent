@@ -21,30 +21,40 @@
 			</header><!-- .page-header -->
 			
 			<div class="category-links">
-				<?php $product_types = get_terms(array (
-					'taxonomy' => 'product-type',
-					'hide_empty' => false
-				)); 
-				if (!empty($product_types)&& !is_wp_error($product_types)) : ?>
-				<?php foreach ($product_types as $product_type) : ?>
-				<a class="capitalize" href = "<?php echo get_term_link($product_type); ?>">
-				<?php echo $product_type->name; ?></a>
-				<?php endforeach; ?>
-				<?php endif; ?>
+				<ul>
+					<?php $product_types = get_terms(array (
+						'taxonomy' => 'product-type',
+						'hide_empty' => false
+					)); 
+					if (!empty($product_types)&& !is_wp_error($product_types)) : ?>
+					<?php foreach ($product_types as $product_type) : ?>
+						<li>
+							<a class="capitalize" href = "<?php echo get_term_link($product_type); ?>">
+							<?php echo $product_type->name; ?></a>
+						</li>
+					<?php endforeach; ?>
+					<?php endif; ?>
+				</ul>
 			</div>
 			
-			<ul>
+			<ul class="product-grid">
 				<?php while ( have_posts() ) : the_post(); ?>
 				<li>
-				<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'medium' ); ?>
-				<?php endif; ?>
-				<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
-				$<?php echo get_post_meta($post->ID, 'price', true);
-				?>
+					<div class="product-image">
+						<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'medium' ); ?>
+						<?php endif; ?>
+					</div>
+					<div class = "title-price">
+						<?php the_title( '<p class="product-name">', '</p>' ); ?>
+						<span class="price">$<?php echo get_post_meta($post->ID, 'price', true); ?></span>
+						<div class="elipses">
+							<p>.............................</p>
+						</div>
+					</div>
 				</li>
-			</ul>
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</ul>	
 
 			<?php the_posts_navigation(); ?>
 
