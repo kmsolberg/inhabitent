@@ -102,7 +102,41 @@
 .comment-respond{
 	@include comment-border;
 	padding-top: 0;
+	h3{
+		font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	}
 }
+
+.comment-form label{
+	line-height: 1rem;
+}
+
+.comment-form-comment{
+	font-family: $font_accent;
+	color: black;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+.comment-form-author{
+	@include comment-form;
+	width: 23rem;	
+	float: left;
+}
+
+.comment-form-email{
+	@include comment-form;
+	width: 23rem;
+	float: right;
+}
+
+.comment-form-url{
+	@include comment-form;
+	clear: both;
+}
+
 
 // Footer
 

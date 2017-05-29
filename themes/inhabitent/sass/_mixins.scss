@@ -22,3 +22,29 @@
 	padding-top: 2rem;
 	margin-right: 4rem;
 }
+
+@mixin comment-form{
+	font-family: $font_accent;
+	color: black;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin button-green{
+	color: white;
+  background: $color_green_brand;
+  text-align: center;
+  margin: 1rem 0 .5rem 0;
+  font-size: .9rem;
+  padding: .45rem 1rem;
+  :hover{
+    border-color: $color_orange_brand;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: $font_accent;
+  }
+}

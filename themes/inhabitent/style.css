@@ -404,32 +404,27 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  color: white;
+  background: #248A83;
+  text-align: center;
+  margin: 1rem 0 .5rem 0;
+  font-size: .9rem;
+  padding: .45rem 1.5rem;
+  text-transform: uppercase;
+  font-family: "novecento sans web";
+  border: none; }
+  button :hover,
+  input[type="button"] :hover,
+  input[type="reset"] :hover,
+  input[type="submit"] :hover {
+    border-color: #d99054; }
+  button a,
+  input[type="button"] a,
+  input[type="reset"] a,
+  input[type="submit"] a {
+    color: white;
+    text-decoration: none;
+    font-family: "novecento sans web"; }
 
 /* Fields */
 input[type="text"],
@@ -439,8 +434,9 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  background-color: #f4f4f4; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -459,6 +455,9 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.required {
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -764,6 +763,54 @@ header#masthead {
   padding-top: 2rem;
   margin-right: 4rem;
   padding-top: 0; }
+  .comment-respond h3 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.comment-form label {
+  line-height: 1rem; }
+
+.comment-form-comment {
+  font-family: "novecento sans web";
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+
+.comment-form-author {
+  font-family: "novecento sans web";
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 23rem;
+  float: left; }
+
+.comment-form-email {
+  font-family: "novecento sans web";
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 23rem;
+  float: right; }
+
+.comment-form-url {
+  font-family: "novecento sans web";
+  color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  clear: both; }
 
 .site-footer {
   background-image: -webkit-image-set(url("../../images/dark-wood.png") 1x, url("../../images/dark-wood@2x.png") 2x);
