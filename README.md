@@ -1,7 +1,7 @@
 # Project 4: Inhabitent
 This project is an introduction to Wordpress and creating a custom Wordpress theme!
 
-![Image of Landing Page](landing-page.png)
+![Image of Landing Page](/../landing-page.png)
 
 ## Technologies Used:
 This website uses a custom Wordpress theme, custom widgets, taxonomies, and custom post types.
