@@ -174,8 +174,9 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 2rem;
+	height: 3rem;
 	padding: 0.5rem 0;
+	align-items: baseline;
 }
 
 .logo{
@@ -183,6 +184,7 @@ a {
 	align-self: center;
 	img{
 		height: 2rem;
+		margin-top: 0.25rem;
 	}
 }
 
@@ -197,4 +199,8 @@ a {
 .menu-word{
 	display: flex;
 	flex-flow: row nowrap;
+}
+
+header#masthead {
+    margin-top: -2rem;
 }
