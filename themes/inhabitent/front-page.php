@@ -71,6 +71,35 @@ get_header(); ?>
 				wp_reset_postdata();?>
 		</div>
 
+		<section class="container">	
+			<h1>latest adventures</h1>	
+			<div class="adventure">			
+				<div class="main-adventure">
+					<h2>Getting Back to Nature in a Canoe</h2>
+					<p class="white-button">read more</p>
+				</div>
+				
+				<ul class="secondary-adventure">
+					<li class="adventure-b">
+						<h2>A Night With Friends at the Beach</h2>
+						<p class="white-button">read more</p>			
+					</li>
+					<li class="adventure-c">
+						<h2>Taking in the View at Big Mountain</h2>
+						<p class="white-button">read more</p>			
+					</li>
+					<li class="adventure-d">
+						<h2>Star-Gazing at the Night Sky</h2>
+						<p class="white-button">read more</p>			
+					</li>
+				</ul>
+			</div>
+			<div class="adventure-button">
+				<p>more adventures</p>
+			</div>
+		</section>
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
