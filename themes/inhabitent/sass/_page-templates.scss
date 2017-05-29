@@ -141,6 +141,14 @@ a.read-more{
   text-transform: uppercase;
   width: 8rem;
   font-family: $font_accent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  &:hover{
+    background: $color_green_brand;
+    border: none;
+  }
 }
 
 .adventure{
@@ -155,6 +163,12 @@ a.read-more{
   background: url("../../images/canoe-girl.jpg") no-repeat;
   flex: 0 1 49%;  
   height: 33.55rem;
+  background-size: 64rem;
+  background-position: center;
+  padding-left: 2rem;
+  h2{
+  font-size: 3.2rem;
+  }
 }
 
 .secondary-adventure{
@@ -171,27 +185,43 @@ h2{
   color: white;
   font-family: $font__main;
   font-weight: lighter;
-  font-size: 2rem;
+  line-height: 3.3rem;
 }
 
 .adventure-b{
   background: url("../../images/beach-bonfire.jpg");
+  background-position: 39rem 20rem;
+  background-size: 43rem;
   flex: 0 1 100%;
   height: 48%;
+  padding-left: 1rem;
+  h2{
+    font-size: 2.8rem;
+  }
+}
+
+
+.adventure-c, .adventure-d{
+  flex: 0 1 48%;
+  height: 48%;  
+  align-self: flex-end;
+  padding-left: 1rem;
+  h2{
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
 }
 
 .adventure-c{
   background: url("../../images/mountain-hikers.jpg");
-  flex: 0 1 48%;
-  height: 48%;  
-  align-self: flex-end;
+  background-position: -10rem -6.5rem;
+  background-size: 37rem;
 }
 
 .adventure-d{
   background: url("../../images/night-sky.jpg");
-  flex: 0 1 48%;
-  height: 48%;  
-  align-self: flex-end;
+  background-size: 43rem;
+  background-position: 29rem 19rem;
 }
 
 

@@ -81,7 +81,7 @@ get_header(); ?>
 				
 				<ul class="secondary-adventure">
 					<li class="adventure-b">
-						<h2>A Night With Friends at the Beach</h2>
+						<h2>A Night with Friends at the Beach</h2>
 						<p class="white-button">read more</p>			
 					</li>
 					<li class="adventure-c">
