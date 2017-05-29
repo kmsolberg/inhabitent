@@ -947,13 +947,11 @@ object {
 .home .site-content {
   width: 100%; }
 
-.home .site-main {
-  margin-top: -4rem; }
-
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 101vh;
+  margin-top: -2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;

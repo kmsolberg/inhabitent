@@ -1,38 +1,46 @@
-=== RED Starter Theme ===
+# Project 4: Inhabitent
+This project is an introduction to Wordpress and creating a custom Wordpress theme!
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+![Image of Landing Page](/landing-page.png)
 
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+## Technologies Used:
+This website uses a custom Wordpress theme, custom widgets, taxonomies, and custom post types.
 
-A starter theme called RED Starter Theme, or underscores.
+- [Wordpress](http://wordpress.org)
+- Wordpress Plugins
+  - [Contact Form 7](https://contactform7.com/)
+  - [Custom Field Suite](http://customfieldsuite.com/)
+  - [Query Moniter](https://github.com/johnbillion/query-monitor)
+  - [Theme Check](http://ottopress.com/wordpress-plugins/theme-check/)
+  - [WP Migrate Database](https://wordpress.org/plugins/wp-migrate-db/)
+- PHP
+- SASS
+- [Gulp](http://gulpjs.com/)
+  - Dev dependencies:
+    - browser-sync
+    - gulp-autoprefixer
+    - gulp-cssnano
+    - gulp-eslint
+    - gulp-notify
+    - gulp-plumber
+    - gulp-rename
+    - gulp-sass
+    - gulp-sourcemaps
+    - gulp-uglify
+- [Google Chrome](https://www.google.com/chrome/) 
+- Google Chrome Developer Tools
+- [Google Maps](https://maps.google.com)
+- @font-face generated from [Font Squirrel](https://www.fontsquirrel.com/)
+- [Font Awesome](http://fontawesome.io/)
+- JavaScript
+- [jQuery](https://jquery.com/)
+- HTML Validator (https://validator.w3.org/)
+- CSS Validator (https://jigsaw.w3.org/css-validator/)
+- CSS Reset, [Eric Meyer's Reset CSS](http://cssreset.com/scripts/eric-meyer-reset-css/)
 
-== Description ==
-
-Hi. I'm a starter theme called RED Starter Theme, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-
-== Installation ==
-	
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-RED Starter Theme includes support for Infinite Scroll in Jetpack.
-
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
-
-== Credits ==
-
-* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+## Personal Learnings
+- Time mananging CSS becomes incredibly important the more pages a site has
+- If using SASS, any time you use a setting more than twice you should make a variable or mixin' for it to speed up your coding later
+- Each page doesn't need its own template, but having a thorough understanding of how the tepmlates work off of each other is critical to having as little code as possible.
+- How you lay things out becomes very different when you're using a CMS and are desinging for when clients may change things in the future.
+- Flexbox does become easier the more you do it, mainly because you create the divs in your styling with it in mind!
