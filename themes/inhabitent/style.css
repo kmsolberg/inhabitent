@@ -1211,7 +1211,8 @@ h2 {
   padding-left: 3rem;
   -ms-flex: 0 0 27%;
       flex: 0 0 27%;
-  margin-top: 3.5rem; }
+  padding-top: 2rem;
+  margin-top: 2rem; }
 
 .widget li {
   list-style: none; }
@@ -1500,3 +1501,27 @@ fieldset {
   padding: .2rem 0.7rem; }
   .current:hover {
     background-color: #808080; }
+
+.page-id-33 h1 {
+  text-align: left;
+  font-weight: bold;
+  margin: 0; }
+
+.page-id-33 .content-area {
+  margin-right: 4rem; }
+
+.page-id-33 h3 {
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 2.3rem;
+  margin: 0; }
+
+.page-id-33 p {
+  margin-bottom: 0; }
+
+.page-id-33 .wpcf7 {
+  font-family: "novecento sans web";
+  font-size: 1.1rem; }
+
+.page-id-33 .wpcf7-submit:hover {
+  background-color: #19625d; }
