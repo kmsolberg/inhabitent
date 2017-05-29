@@ -549,3 +549,30 @@ i{
     margin: 0;
   }
 }
+
+//404 PAGE//
+
+.error404{
+  h1{
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+  }
+  h2{
+    color: black;
+    text-transform: uppercase;
+    font-family: $font_accent;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  fieldset{
+    margin: 0;
+    padding: 0;
+  }
+  .search-field{
+    display: initial;
+  }
+  .page-content .search-submit{
+    display: none;
+  }
+}
