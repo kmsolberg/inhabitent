@@ -551,12 +551,12 @@ a {
   text-align: right;
   width: 50%; }
 
-.search-field {
+.main-navigation .search-field {
   display: none;
   overflow: hidden;
   border: none;
-  background: none; }
-  .search-field :focus {
+  background: transparent; }
+  .main-navigation .search-field:focus {
     outline: none; }
 
 .icon-search {
@@ -876,6 +876,9 @@ header#masthead {
       background: #248A83;
       color: white; }
 
+.media-buttons .fa {
+  font-size: 1.4rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1166,6 +1169,9 @@ h2 {
 .post-22 .entry-title {
   display: none; }
 
+.page-id-22 .site-content {
+  width: 100%; }
+
 .content-full-width {
   width: 100%;
   float: none; }
@@ -1176,6 +1182,7 @@ h2 {
 
 .about-hero {
   color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4));
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1186,7 +1193,8 @@ h2 {
   width: 100%; }
   .about-hero h1 {
     font-size: 3rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold; }
 
 .post-22 .site-header {
   background-color: transparent;

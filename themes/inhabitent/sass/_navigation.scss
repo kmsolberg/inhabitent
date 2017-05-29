@@ -141,12 +141,12 @@ a {
 	}
 }
 
-.search-field{ 
+.main-navigation .search-field{ 
 	display: none;
 	overflow:hidden;
 	border: none;
-	background: none;
-	:focus{
+	background: transparent;
+	&:focus{
 		outline: none;
 	}
 }
