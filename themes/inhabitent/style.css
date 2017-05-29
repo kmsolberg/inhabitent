@@ -768,12 +768,20 @@ header#masthead {
 .social-media {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   text-transform: uppercase;
-  font-family: "novecento sans web"; }
+  font-family: "novecento sans web";
+  width: 20rem; }
+  .social-media i {
+    padding: 0; }
   .social-media p {
     border: 1px solid black;
     padding: 0.5rem 1.5rem;
     transition: all ease; }
+    .social-media p:hover {
+      background: #248A83;
+      color: white; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1266,3 +1274,46 @@ i {
 
 .tax-product-type .product-grid {
   margin: 3rem 0; }
+
+.single-product h2 {
+  color: black;
+  line-height: normal;
+  margin: 0; }
+
+.type-product {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-product .content-area {
+  margin-bottom: 3rem; }
+
+.single-product h1 {
+  color: #d99054;
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  line-height: normal; }
+
+.single-product .entry-header {
+  -ms-flex: 0 0 47%;
+      flex: 0 0 47%;
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: none; }
+  .single-product .entry-header img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+.single-product .entry-content {
+  -ms-flex: 0 0 47%;
+      flex: 0 0 47%;
+  margin: 0; }

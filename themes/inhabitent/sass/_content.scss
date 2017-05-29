@@ -108,9 +108,19 @@
 
 .social-media{
 	display: flex;
+	justify-content: space-between;
 	text-transform: uppercase;
 	font-family: $font_accent;
+	width: 20rem;
+	i{
+		padding: 0;
+	}
 	p{
 		@include black-button;
+		
+		&:hover{
+		background: $color_green_brand;
+		color: white;
+		}	
 	}
 }

@@ -479,3 +479,48 @@ i{
 .tax-product-type .product-grid{
   margin: 3rem 0;
 }
+
+.single-product h2{
+  color: black;
+  line-height: normal;
+  margin: 0;
+}
+
+.type-product{
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-product{
+  .content-area{
+    margin-bottom: 3rem;
+  }
+  h1{
+    color: $color_orange_brand;
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .entry-header{
+    flex: 0 0 47%;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: none;
+    img{
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+  }
+  .entry-content{
+    flex: 0 0 47%;
+    margin: 0;
+  }
+}

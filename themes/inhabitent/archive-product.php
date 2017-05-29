@@ -41,9 +41,11 @@
 				<?php while ( have_posts() ) : the_post(); ?>
 				<li>
 					<div class="product-image">
+						<a href="<?php the_permalink()?>">
 						<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'medium' ); ?>
 						<?php endif; ?>
+						</a>
 					</div>
 					<div class = "title-price">
 						<?php the_title( '<p class="product-name">', '</p>' ); ?>
