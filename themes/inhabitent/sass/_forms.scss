@@ -37,6 +37,8 @@ input[type="search"],
 textarea {
 	color: #666;
 	border: $border_grey;
+	text-transform: uppercase;
+	font-family: $font_accent;
 	border-radius: 3px;
 	background-color: #f4f4f4;
 

@@ -565,14 +565,82 @@ i{
     font-weight: bold;
     letter-spacing: 2px;
   }
-  fieldset{
+}
+
+//SEARCH PAGE//
+.search-results, .search-no-results{
+  h1{
+    text-align: left;
     margin: 0;
-    padding: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    margin: 0.5rem 0 3rem 0;
+    padding-bottom: 1rem;
+    border-bottom: $border_grey;
   }
-  .search-field{
-    display: initial;
+}
+
+fieldset{
+  margin: 0;
+  padding: 0;
+}
+.site-main .search-field{
+  display: initial;
+}
+.page-content .search-submit{
+  display: none;
+}
+
+.search-results .type-product{
+  display: initial;
+}
+
+.search-results{
+  .read-more{
+    position: initial;
   }
-  .page-content .search-submit{
-    display: none;
+  h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $font_accent;
+  letter-spacing: 2px;
+  font-size: 2.1rem;
+  line-height: 2rem;
   }
+  .content-area{
+    margin-right: 4rem;
+  }
+}
+
+.search-pagination{
+  border-top: $border_grey;
+  padding: 2rem 0 5rem 0;
+  text-transform: uppercase;
+  font-family: $font-accent;
+  a{
+    color: white;
+  }
+}
+
+.page-numbers{
+  color: white;
+  padding: .2rem 0.7rem;
+  background-color: $color_green-brand;
+  &:hover{
+    background-color: $color_purple_brand;
+  }
+}
+
+.current{
+  background-color: $color_grey-medium-brand;
+  padding: .2rem 0.7rem;
+  &:hover{
+    background-color: $color_grey_medium_brand;
+  }
+}
+
+
+.next .page-numbers{
+
 }

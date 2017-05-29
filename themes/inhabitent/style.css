@@ -435,6 +435,8 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #e1e1e1;
+  text-transform: uppercase;
+  font-family: "novecento sans web";
   border-radius: 3px;
   background-color: #f4f4f4; }
   input[type="text"]:focus,
@@ -1441,12 +1443,60 @@ i {
   font-weight: bold;
   letter-spacing: 2px; }
 
-.error404 fieldset {
+.search-results h1, .search-no-results h1 {
+  text-align: left;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  margin: 0.5rem 0 3rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1; }
+
+fieldset {
   margin: 0;
   padding: 0; }
 
-.error404 .search-field {
+.site-main .search-field {
   display: initial; }
 
-.error404 .page-content .search-submit {
+.page-content .search-submit {
   display: none; }
+
+.search-results .type-product {
+  display: initial; }
+
+.search-results .read-more {
+  position: initial; }
+
+.search-results h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "novecento sans web";
+  letter-spacing: 2px;
+  font-size: 2.1rem;
+  line-height: 2rem; }
+
+.search-results .content-area {
+  margin-right: 4rem; }
+
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  padding: 2rem 0 5rem 0;
+  text-transform: uppercase;
+  font-family: "novecento sans web"; }
+  .search-pagination a {
+    color: white; }
+
+.page-numbers {
+  color: white;
+  padding: .2rem 0.7rem;
+  background-color: #248A83; }
+  .page-numbers:hover {
+    background-color: #2f1339; }
+
+.current {
+  background-color: #808080;
+  padding: .2rem 0.7rem; }
+  .current:hover {
+    background-color: #808080; }
