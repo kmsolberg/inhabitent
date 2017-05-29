@@ -54,6 +54,56 @@
 	display: block;
 }
 
+.comment-body{
+	display: flex;
+}
+
+.comment-list{
+	margin: 0;
+	padding: 0;
+}
+
+.comment-author{
+	font-weight: bold;
+	font-family: $font__main;
+	cite{
+		font-style: normal;
+	}
+}
+
+.comment-metadata{
+	color: gray;	
+}
+
+.comment-meta p{
+		margin-bottom: 1rem;
+}
+
+.comment-author-avatar{
+	margin-right: 2rem;
+
+	img{
+		border-radius: 35px;
+	}
+}
+
+.reply{
+	margin-bottom: 2rem;
+}
+
+.children li{
+	@include comment-border;
+}
+
+.comment-list li:not(:first-child) {
+	@include comment-border;
+}
+
+.comment-respond{
+	@include comment-border;
+	padding-top: 0;
+}
+
 // Footer
 
 .site-footer {

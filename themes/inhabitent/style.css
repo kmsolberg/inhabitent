@@ -721,6 +721,50 @@ header#masthead {
 .bypostauthor {
   display: block; }
 
+.comment-body {
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment-list {
+  margin: 0;
+  padding: 0; }
+
+.comment-author {
+  font-weight: bold;
+  font-family: "merriweather"; }
+  .comment-author cite {
+    font-style: normal; }
+
+.comment-metadata {
+  color: gray; }
+
+.comment-meta p {
+  margin-bottom: 1rem; }
+
+.comment-author-avatar {
+  margin-right: 2rem; }
+  .comment-author-avatar img {
+    border-radius: 35px; }
+
+.reply {
+  margin-bottom: 2rem; }
+
+.children li {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 2rem;
+  margin-right: 4rem; }
+
+.comment-list li:not(:first-child) {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 2rem;
+  margin-right: 4rem; }
+
+.comment-respond {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 2rem;
+  margin-right: 4rem;
+  padding-top: 0; }
+
 .site-footer {
   background-image: -webkit-image-set(url("../../images/dark-wood.png") 1x, url("../../images/dark-wood@2x.png") 2x);
   background-image: image-set("../../images/dark-wood.png" 1x, "../../images/dark-wood@2x.png" 2x);
@@ -1140,24 +1184,25 @@ h2 {
 i {
   padding-right: 1rem; }
 
-.blog .entry-title {
+.blog .entry-title, .single-post .entry-title {
   background-color: #248A83;
   display: inline-block;
   position: absolute;
   left: 0rem;
-  top: 0rem;
+  top: 2.5rem;
   max-width: 75%;
   font-size: 2.2rem;
   line-height: 2.5rem;
   padding: .5rem 1.5rem;
   text-transform: uppercase;
   color: white;
+  margin: 0;
   text-align: left; }
-  .blog .entry-title a {
+  .blog .entry-title a, .single-post .entry-title a {
     text-decoration: none;
     color: white; }
 
-.blog .site-main .entry-meta {
+.blog .site-main .entry-meta, .single-post .site-main .entry-meta {
   background-color: #248A83;
   position: absolute;
   color: white;
@@ -1168,16 +1213,18 @@ i {
   font-size: 1rem;
   right: 0rem;
   bottom: 0rem; }
+  .blog .site-main .entry-meta a, .single-post .site-main .entry-meta a {
+    color: white; }
 
-.blog .entry-header {
+.blog .entry-header, .single-post .entry-header {
   height: 32rem;
   position: relative; }
-  .blog .entry-header img {
+  .blog .entry-header img, .single-post .entry-header img {
     width: 100%;
     height: 32rem;
     background-size: cover; }
 
-.blog .hentry {
+.blog .hentry, .single-post .hentry {
   width: 48rem;
   margin-right: 3rem; }
 
@@ -1188,6 +1235,22 @@ i {
 
 .blog .entry-content {
   margin-bottom: 4rem; }
+  .blog .entry-content p {
+    margin-bottom: 2rem; }
+
+.entry-footer {
+  text-transform: uppercase;
+  font-family: "novecento sans web"; }
+
+.cat-links {
+  margin-right: 2rem; }
+
+.single-post h2 {
+  color: black;
+  font-family: "novecento sans web";
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-transform: uppercase; }
 
 .product-grid {
   list-style: none;

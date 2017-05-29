@@ -328,18 +328,19 @@ i{
 
 // JOURNAL PAGE
 
-.blog .entry-title{
+.blog .entry-title, .single-post .entry-title{
   background-color: $color_green_brand;
   display: inline-block;
   position: absolute;
   left: 0rem;
-  top: 0rem;
+  top: 2.5rem;
   max-width: 75%;
   font-size: 2.2rem;
   line-height: 2.5rem;
   padding: .5rem 1.5rem;
   text-transform: uppercase;
   color: white;
+  margin: 0;
   text-align: left;
   a{
     text-decoration: none;
@@ -347,7 +348,7 @@ i{
   }
 }
 
-.blog .site-main .entry-meta{
+.blog .site-main .entry-meta, .single-post .site-main .entry-meta{
   background-color: $color_green_brand;
   position: absolute;
   color: white;
@@ -358,9 +359,12 @@ i{
   font-size: 1rem;
   right: 0rem;
   bottom: 0rem;
+  a{
+    color: white;
+  }
 }
 
-.blog .entry-header{
+.blog .entry-header, .single-post .entry-header{
   height: 32rem;
   position: relative;
   img{
@@ -370,7 +374,7 @@ i{
   }
 }
 
-.blog .hentry{
+.blog .hentry, .single-post .hentry{
   width: 48rem;
   margin-right: 3rem;
 }
@@ -383,6 +387,26 @@ i{
 
 .blog .entry-content{
   margin-bottom: 4rem;
+  p{
+    margin-bottom: 2rem;
+  }
+}
+
+.entry-footer{
+  text-transform: uppercase;
+  font-family: $font_accent;
+}
+
+.cat-links{
+    margin-right: 2rem;
+}
+
+.single-post h2{
+  color: black;
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-transform: uppercase;
 }
 
 // ARCHIVE-PRODUCT
