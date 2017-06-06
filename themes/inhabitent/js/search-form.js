@@ -4,8 +4,8 @@
       
     $('.icon-search').click(function(event){
         event.preventDefault();
-        event.stopPropagation();
-        $('.main-navigation .search-field').toggle('fast')
+        $('.main-navigation .search-field').toggle('fast');
+        $('.main-navigation [type="search"]').focus();
     });
     $(document).click( function(event){
       if( !$('.search-field').is(event.target)){
