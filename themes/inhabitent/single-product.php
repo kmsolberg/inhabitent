@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single product posts.
+ * The template for displaying all single posts.
  *
- * @package Inhabitent Theme
+ * @package RED_Starter_Theme
  */
 
 get_header(); ?>
@@ -12,7 +12,12 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'product' ); ?>
+			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<div class="social-media">
+				<p><i class="fa fa-facebook" aria-hidden="true"></i>	like</p>
+				<p><i class="fa fa-twitter" aria-hidden="true"></i>	tweet</p>
+				<p><i class="fa fa-pinterest" aria-hidden="true"></i> pin</p>
+			</div>
 
 		<?php endwhile; // End of the loop. ?>
 

@@ -61,7 +61,6 @@ function register_product_post_type() {
 add_action( 'init', 'register_product_post_type', 0 );
 
 // Register Custom Post Type
-// Register Custom Post Type
 function adventure_post_type() {
 
 	$labels = array(
