@@ -71,7 +71,26 @@ get_header(); ?>
 				wp_reset_postdata();?>
 		</div>
 
-		<section class="container">	
+		<div class="adventure container">	
+				<?php
+				$args = array( 
+					'post_type' => 'adventure', 
+					'posts_per_page' => 4);
+
+				$myposts = get_posts( $args );
+				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+					<ul class="home-posts">
+						<?php the_post_thumbnail(); ?>
+						<div class = "post-text">
+							<li><h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3></li>	
+							<li><a class="read-more capitalize black-button" href="<?php the_permalink() ?>">Read Entry</a></li>	
+						</div>			
+					</ul>
+				<?php endforeach; 
+				wp_reset_postdata();?>
+		</div>
+
+		<!--<section class="container">	
 			<h1>latest adventures</h1>	
 			<div class="adventure">			
 				<div class="main-adventure">
@@ -97,7 +116,7 @@ get_header(); ?>
 			<div class="adventure-button">
 				<p><a href="#">more adventures</a></p>
 			</div>
-		</section>
+		</section>-->
 
 
 		</main><!-- #main -->
