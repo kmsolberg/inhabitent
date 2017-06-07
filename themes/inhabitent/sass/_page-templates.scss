@@ -140,7 +140,6 @@ a.read-more{
 
 .white-button{
   color: white;
-  border: 1px solid white;
   text-transform: uppercase;
   width: 8rem;
   font-family: $font_accent;
@@ -150,23 +149,34 @@ a.read-more{
   padding: 0.5rem 1rem;
   &:hover{
     background: $color_green_brand;
-    border: none;
+    border: 2px solid $color_green_brand;
   }
   a{
     color: white;
   }
 }
 
-.adventure-section ul{
+.adventure-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.adventure-posts li{
+.adventure-posts li {
   float: left;
   position: relative;
   overflow: hidden;
+  h2{
+    font-family: $font__main;
+    font-weight: lighter;
+    padding: 0 1rem;
+  }
+  a {
+    color: white;
+  }
+  & .white-button{
+    margin: 1rem;
+  }
 }
 
 .adventure-posts li:first-child{
@@ -188,6 +198,10 @@ a.read-more{
   left: 0;
   max-width: none;
   transform: translate(-20%,5%);
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
@@ -211,6 +225,10 @@ a.read-more{
     left: 0;
     transform: translate(-9%,7%);
   }
+  h2{
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
 }
 
 .adventure-posts li:nth-child(3) {
@@ -233,6 +251,14 @@ a.read-more{
     left: 0;
     transform: translate(-30%,10%);
   }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 1rem;    
+  }
+  .read-more {
+    margin: 0.7rem;
+  }
 }
 
 .adventure-posts li:last-child {
@@ -254,71 +280,26 @@ a.read-more{
     left: 0;
     transform: translate(-28%,9%);
   }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 1rem;
+  }
+  .read-more {
+    margin: 0.7rem;
+  }
 }
 
 .adventure-title {
   position: relative;
-  bottom: 23rem;
 }
 
-// .wrapper li:first-child{
-//   position: absolute;
-//   height: 33rem;
-//   width: 33rem;
-// }
-
-
-// .main-adventure{
-//   flex: 0 1 49%;  
-//   height: 33.55rem;
-//   padding-left: 2rem;
-//   h2{
-//   font-size: 3.2rem;
-//   }
-// }
-
-// .secondary-adventure{
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: space-between;
-//   flex: 0 1 49%;
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// h2{
-//   color: white;
-//   font-family: $font__main;
-//   font-weight: lighter;
-//   line-height: 3.3rem;
-// }
-
-// .adventure-b{
-//   flex: 0 1 100%;
-//   height: 48%;
-//   padding-left: 1rem;
-//   h2{
-//     font-size: 2.8rem;
-//   }
-// }
-
-// .adventure-c, .adventure-d{
-//   flex: 0 1 48%;
-//   height: 48%;  
-//   align-self: flex-end;
-//   padding-left: 1rem;
-//   h2{
-//     font-size: 1.7rem;
-//     line-height: 2.3rem;
-//   }
-// }
 
 .adventure-button{
   background: $color_green_brand;
   text-transform: uppercase;
   font-family: $font_accent;
-  // padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   width: 15rem;
   margin: 2rem 0 4rem;
   text-align: center;

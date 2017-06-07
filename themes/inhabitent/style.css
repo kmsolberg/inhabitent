@@ -1070,7 +1070,6 @@ a.read-more {
 
 .white-button {
   color: white;
-  border: 1px solid white;
   text-transform: uppercase;
   width: 8rem;
   font-family: "novecento sans web";
@@ -1080,7 +1079,7 @@ a.read-more {
   padding: 0.5rem 1rem; }
   .white-button:hover {
     background: #248A83;
-    border: none; }
+    border: 2px solid #248A83; }
   .white-button a {
     color: white; }
 
@@ -1093,6 +1092,14 @@ a.read-more {
   float: left;
   position: relative;
   overflow: hidden; }
+  .adventure-posts li h2 {
+    font-family: "merriweather";
+    font-weight: lighter;
+    padding: 0 1rem; }
+  .adventure-posts li a {
+    color: white; }
+  .adventure-posts li .white-button {
+    margin: 1rem; }
 
 .adventure-posts li:first-child {
   width: 50%;
@@ -1112,6 +1119,9 @@ a.read-more {
     left: 0;
     max-width: none;
     transform: translate(-20%, 5%); }
+  .adventure-posts li:first-child h2 {
+    font-size: 3rem;
+    line-height: 4rem; }
 
 .adventure-posts li:nth-child(2) {
   width: 50%;
@@ -1131,6 +1141,9 @@ a.read-more {
     bottom: 0;
     left: 0;
     transform: translate(-9%, 7%); }
+  .adventure-posts li:nth-child(2) h2 {
+    font-size: 2.5rem;
+    line-height: 3.2rem; }
 
 .adventure-posts li:nth-child(3) {
   height: 16.78rem;
@@ -1150,6 +1163,12 @@ a.read-more {
     bottom: 0;
     left: 0;
     transform: translate(-30%, 10%); }
+  .adventure-posts li:nth-child(3) h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 1rem; }
+  .adventure-posts li:nth-child(3) .read-more {
+    margin: 0.7rem; }
 
 .adventure-posts li:last-child {
   height: 16.78rem;
@@ -1168,15 +1187,21 @@ a.read-more {
     bottom: 0;
     left: 0;
     transform: translate(-28%, 9%); }
+  .adventure-posts li:last-child h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 1rem; }
+  .adventure-posts li:last-child .read-more {
+    margin: 0.7rem; }
 
 .adventure-title {
-  position: relative;
-  bottom: 23rem; }
+  position: relative; }
 
 .adventure-button {
   background: #248A83;
   text-transform: uppercase;
   font-family: "novecento sans web";
+  padding: 0.5rem 1rem;
   width: 15rem;
   margin: 2rem 0 4rem;
   text-align: center;
