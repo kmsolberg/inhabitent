@@ -1609,3 +1609,30 @@ fieldset {
   text-transform: uppercase;
   font-family: "novecento sans web";
   font-size: 1.2rem; }
+
+.adventure-archive {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .adventure-archive li {
+    -ms-flex: 0 1 49%;
+        flex: 0 1 49%;
+    height: 35rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative; }
+  .adventure-archive .wrapper {
+    position: absolute;
+    height: 35rem; }
+  .adventure-archive img {
+    height: 100%;
+    position: absolute;
+    width: auto;
+    max-width: none;
+    left: -39%; }

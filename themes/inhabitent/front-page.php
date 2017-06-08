@@ -69,8 +69,7 @@ get_header(); ?>
 						<?php
 						$args = array( 
 							'post_type' => 'adventure', 
-							'posts_per_page' => 4,
-							'order' => 'asc');
+							'posts_per_page' => 4);
 						
 						$myposts = get_posts( $args );
 						foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
@@ -86,7 +85,7 @@ get_header(); ?>
 						<?php endforeach; 
 						wp_reset_postdata();?>
 					</ul>
-					<p class="adventure-button">more adventures</p>
+					<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>"><p class="adventure-button">more adventures</p></a>
 				</div>
 			</section>
 

@@ -782,3 +782,31 @@ fieldset{
     font-size: 1.2rem;
   }
 }
+
+// Adventure archive
+.adventure-archive {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  li {
+    flex: 0 1 49%;
+    height: 35rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative;    
+  }
+  & .wrapper {
+    position: absolute;
+    height: 35rem;
+  }
+  & img {
+    height: 100%;
+    position: absolute;
+    width: auto;
+    max-width: none;
+    left: -39%;
+  }
+}
