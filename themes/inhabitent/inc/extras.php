@@ -52,6 +52,8 @@ add_filter('login_headertitle', 'inhabitent_login_title');
  function inhabitent_change_archive_titles( $title ) {
      if( is_post_type_archive( 'product' ) ) {
          $title = 'Shop Stuff';
+     } if( is_post_type_archive( 'adventure' ) ) {
+         $title = 'Latest Adventures';
      } elseif( is_tax( 'product-type' )) {
 				$title = single_term_title('', false);
 		 }

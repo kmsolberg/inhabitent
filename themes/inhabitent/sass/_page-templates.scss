@@ -791,10 +791,11 @@ fieldset{
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  padding-bottom: 7.5rem;
   li {
     flex: 0 1 49%;
     height: 35rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
     position: relative;    
   }
@@ -808,5 +809,30 @@ fieldset{
     width: auto;
     max-width: none;
     left: -39%;
+  }
+}
+
+.post-type-archive-adventure {
+  .page-title {
+    border-bottom: $border_dashed;
+    margin: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+  & .adventure-title {
+    padding: 1.4rem;
+    h2 {
+      font-family: $font__main;
+      font-weight: lighter;
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    a {
+      color: white;
+    }
+    a:hover {
+      color: $color_yellow-brand;
+    }
   }
 }

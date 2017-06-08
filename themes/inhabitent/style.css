@@ -1619,12 +1619,13 @@ fieldset {
   margin: 0;
   padding: 0;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding-bottom: 7.5rem; }
   .adventure-archive li {
     -ms-flex: 0 1 49%;
         flex: 0 1 49%;
     height: 35rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
     position: relative; }
   .adventure-archive .wrapper {
@@ -1636,3 +1637,22 @@ fieldset {
     width: auto;
     max-width: none;
     left: -39%; }
+
+.post-type-archive-adventure .page-title {
+  border-bottom: 1px dashed #c8c8c8;
+  margin: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  font-weight: bold; }
+
+.post-type-archive-adventure .adventure-title {
+  padding: 1.4rem; }
+  .post-type-archive-adventure .adventure-title h2 {
+    font-family: "merriweather";
+    font-weight: lighter;
+    font-size: 3.5rem;
+    line-height: 4rem; }
+  .post-type-archive-adventure .adventure-title a {
+    color: white; }
+  .post-type-archive-adventure .adventure-title a:hover {
+    color: #f0e4d1; }
