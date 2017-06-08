@@ -2,10 +2,10 @@
 
   $(document).ready(function() {
       
-    $('.icon-search').click(function(event){
-        event.preventDefault();
+    $('.icon-search').click(function(){
         $('.main-navigation .search-field').toggle('fast');
-        $('.main-navigation [type="search"]').focus();
+        $('.main-navigation .search-field').focus();
+        return false;
     });
     $(document).click( function(event){
       if( !$('.search-field').is(event.target)){
