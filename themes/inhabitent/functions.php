@@ -97,7 +97,7 @@ function inhabitent_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	if ( is_page( 'home' ) || is_page( 'about' ) ) {
+	if ( is_page( 'home' ) || is_page( 'about' ) || is_singular ( 'adventure' ) ) {
 		wp_enqueue_script( 'inhabitent-nav-bar-toggle', get_template_directory_uri() . '/build/js/header-bar.min.js', array('jquery'), false, true );
 	} else {
 		return;

@@ -14,7 +14,7 @@
 			<?php the_post_thumbnail( 'full' ); ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content container">
+	<div class="entry-content container scroll-stop">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

@@ -609,7 +609,7 @@ a {
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
 
-#page {
+body {
   margin-top: -3rem; }
 
 .nav-static {
@@ -1615,7 +1615,8 @@ fieldset {
   width: 100%; }
 
 .single-adventure .content-area {
-  padding: 0; }
+  padding: 0;
+  margin-top: -3rem; }
 
 .single-adventure .site-content {
   width: 100%; }
