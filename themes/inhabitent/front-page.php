@@ -16,7 +16,7 @@ get_header(); ?>
 				</div>
 			</section>
 			
-			<section class="container">
+			<section class="container shop-section">
 				<h1>Shop Stuff</h1>		
 				<div class="shop">
 					<?php $product_types = get_terms(array (

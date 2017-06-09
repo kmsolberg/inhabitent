@@ -1,14 +1,15 @@
 (function($) {
-  $(document).ready(function() {
+  $(function() {
+    $('#masthead').addClass('nav-static');
     var scroll_start = 0;
-    var startchange = $('.site-header');
-    var offset = startchange.offset();
+    // var startchange = $('.hero');
+    var offset = $('.shop-section').offset();
     $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
-      if(scroll_start < offset.top) {
-        console.log('top!')
+      if(scroll_start > offset.top) {
+        $('#masthead').removeClass('nav-static')
       } else {
-        console.log('nope')
+        $('#masthead').addClass('nav-static')
       }
     });
   });

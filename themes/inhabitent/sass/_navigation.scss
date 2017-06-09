@@ -179,13 +179,13 @@ a {
 	align-items: baseline;
 }
 
-.logo{
-	height: 2rem;
-	align-self: center;
-	img{
-		height: 2rem;
-		margin-top: 0.25rem;
-	}
+.site-title{
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+    background-image: url(../../images/inhabitent-logo-tent.svg);
+		margin: 0;
+		background-size: 3rem 2.6rem;
 }
 
 .site-header{
@@ -208,5 +208,10 @@ header#masthead {
 // responsive nav bar
 
 .nav-static {
-	position: inherit;
+	position: static;
+	color: white;
+}
+
+.nav-static .site-title {
+	background-image: url(../../images/inhabitent-logo-tent-white.svg);	
 }

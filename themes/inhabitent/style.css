@@ -585,14 +585,15 @@ a {
   -ms-flex-align: baseline;
       align-items: baseline; }
 
-.logo {
-  height: 2rem;
+.site-title {
+  height: 3rem;
+  width: 3rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center; }
-  .logo img {
-    height: 2rem;
-    margin-top: 0.25rem; }
+      align-self: center;
+  background-image: url(../../images/inhabitent-logo-tent.svg);
+  margin: 0;
+  background-size: 3rem 2.6rem; }
 
 .site-header {
   position: fixed;
@@ -611,7 +612,11 @@ header#masthead {
   margin-top: -2rem; }
 
 .nav-static {
-  position: inherit; }
+  position: static;
+  color: white; }
+
+.nav-static .site-title {
+  background-image: url(../../images/inhabitent-logo-tent-white.svg); }
 
 /*--------------------------------------------------------------
 # Accessibility

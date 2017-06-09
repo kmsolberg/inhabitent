@@ -30,8 +30,8 @@
 				</div><!-- .site-branding -->
 				<section class="menu container">
 					<div class="logo">
-						<a href="<?php echo get_home_url(); ?>">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
+						<a href="<?php echo get_home_url(); ?>" rel="home">
+							<h1 class="site-title"></h1>
 						</a>
 					</div>
 					<div class="menu-word">
