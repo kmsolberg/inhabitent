@@ -188,7 +188,6 @@ a.read-more{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: teal;
   }
   & img {
   height: auto;
@@ -214,7 +213,6 @@ a.read-more{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: teal;
   }
   & img {
     height: auto;
@@ -240,7 +238,6 @@ a.read-more{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: teal;
   }
   & img {
     height: auto;
@@ -269,7 +266,6 @@ a.read-more{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: teal;
   }
   & img {
     height: auto;
@@ -294,8 +290,9 @@ a.read-more{
   position: relative;
 }
 
-
 .adventure-button{
+  clear: both;
+  display: block;
   background: $color_green_brand;
   text-transform: uppercase;
   font-family: $font_accent;
@@ -306,6 +303,9 @@ a.read-more{
   font-size: 1.2rem;
   a{
     color: white;
+    display: block;
+    clear: both;
+    padding-top: 1rem;
   }
 }
 

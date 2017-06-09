@@ -78,14 +78,16 @@ get_header(); ?>
 									<?php the_post_thumbnail(); ?>
 									<div class="adventure-title">
 										<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>	
-										<a href="<?php the_permalink() ?>"><p class="read-more capitalize white-button">Read More</p></a>
+										<a href="<?php the_permalink() ?>" ><p class="read-more capitalize white-button">Read More</p></a>
 									</div>
 								</div>
 							</li>
 						<?php endforeach; 
 						wp_reset_postdata();?>
 					</ul>
-					<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>"><p class="adventure-button">more adventures</p></a>
+					<div class="adventure-button">
+						<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>"><p>more adventures</p></a>
+					</div>
 				</div>
 			</section>
 

@@ -1,7 +1,7 @@
 /*!
-Theme Name: Inhabitent
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Kat Solberg
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -610,6 +610,9 @@ a {
 header#masthead {
   margin-top: -2rem; }
 
+.nav-static {
+  position: inherit; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1109,8 +1112,7 @@ a.read-more {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background: teal; }
+    overflow: hidden; }
   .adventure-posts li:first-child img {
     height: auto;
     width: 57rem;
@@ -1131,8 +1133,7 @@ a.read-more {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background: teal; }
+    overflow: hidden; }
   .adventure-posts li:nth-child(2) img {
     height: auto;
     position: absolute;
@@ -1153,8 +1154,7 @@ a.read-more {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background: teal; }
+    overflow: hidden; }
   .adventure-posts li:nth-child(3) img {
     height: auto;
     max-width: none;
@@ -1177,8 +1177,7 @@ a.read-more {
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background: teal; }
+    overflow: hidden; }
   .adventure-posts li:last-child img {
     height: auto;
     position: absolute;
@@ -1198,6 +1197,8 @@ a.read-more {
   position: relative; }
 
 .adventure-button {
+  clear: both;
+  display: block;
   background: #248A83;
   text-transform: uppercase;
   font-family: "novecento sans web";
@@ -1207,7 +1208,10 @@ a.read-more {
   text-align: center;
   font-size: 1.2rem; }
   .adventure-button a {
-    color: white; }
+    color: white;
+    display: block;
+    clear: both;
+    padding-top: 1rem; }
 
 /* About*/
 .post-22 .entry-title {

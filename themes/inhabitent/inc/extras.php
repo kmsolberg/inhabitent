@@ -122,3 +122,21 @@ function red_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+
+
+function inhabitent_about_hero () {
+	if ( ! is_page_template( 'page-about.php' ) ) {
+		return;
+	}
+	
+	$hero = CFS()->get( 'hero_image' );		
+	$hero_background = "
+		.about-hero {
+			background: url($hero) bottom/cover no-repeat;
+			height: 100vh;
+		}";
+
+	wp_add_inline_style( 'inhabitent-style', $hero_background );
+}
+
+add_action ( 'wp_enqueue_scripts', 'inhabitent_about_hero' );
