@@ -17,7 +17,7 @@
 	background: linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url("../../images/home-hero.jpg") no-repeat;
 	background-size: cover;
 	height: 101vh;
-  margin-top: -2rem;
+  margin-top: -3rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -317,6 +317,7 @@ a.read-more{
 
 .page-id-22 .site-content{
   width: 100%;
+  margin-top: -3rem;
 }
 
 .content-full-width{
@@ -329,8 +330,17 @@ a.read-more{
   margin: auto;
 }
 
+.page-id-22 .site-main {
+  padding: 2rem 0;
+}
+
 .page-id-22 h2{
   color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 3px;
 }
 
 .about-hero{

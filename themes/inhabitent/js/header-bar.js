@@ -3,7 +3,7 @@
     $('#masthead').addClass('nav-static');
     var scroll_start = 0;
     // var startchange = $('.hero');
-    var offset = $('.shop-section').offset();
+    var offset = $('.scroll-stop').offset();
     $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {

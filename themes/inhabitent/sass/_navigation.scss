@@ -194,6 +194,7 @@ a {
 	width: 100%;
 	border-bottom: $border-grey;
 	z-index: 1000;
+	padding-top: 1rem;
 }
 
 .menu-word{
@@ -201,8 +202,8 @@ a {
 	flex-flow: row nowrap;
 }
 
-header#masthead {
-    margin-top: -2rem;
+#page {
+  margin-top: -3rem;
 }
 
 // responsive nav bar
@@ -210,8 +211,24 @@ header#masthead {
 .nav-static {
 	position: static;
 	color: white;
+	border: none;
+	a {
+		color: white;
+	}
 }
 
 .nav-static .site-title {
-	background-image: url(../../images/inhabitent-logo-tent-white.svg);	
+	background-image: url(../../images/inhabitent-logo-tent-white.svg);
+}
+
+.nav-static .logo {
+	z-index: 1000;
+}
+
+.nav-static .search-form {
+	z-index: 1000;	
+}
+
+.nav-static .icon-search {
+	color: white;
 }

@@ -133,7 +133,7 @@ function inhabitent_about_hero () {
 	$hero_background = "
 		.about-hero {
 			background: url($hero) bottom/cover no-repeat;
-			height: 100vh;
+			height: 101vh;
 		}";
 
 	wp_add_inline_style( 'inhabitent-style', $hero_background );

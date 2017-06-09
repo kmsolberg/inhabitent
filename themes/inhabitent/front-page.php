@@ -16,7 +16,7 @@ get_header(); ?>
 				</div>
 			</section>
 			
-			<section class="container shop-section">
+			<section class="container scroll-stop">
 				<h1>Shop Stuff</h1>		
 				<div class="shop">
 					<?php $product_types = get_terms(array (

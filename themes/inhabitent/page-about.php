@@ -11,7 +11,7 @@ get_header(); ?>
 	<div class="about-hero">
 		<h1> About </h1>
 	</div>
-	<main id="main-about" class="site-main" role="main">
+	<main id="main-about" class="site-main scroll-stop" role="main">
 
 		
 		<h2>Our Story</h2>

@@ -600,7 +600,8 @@ a {
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
-  z-index: 1000; }
+  z-index: 1000;
+  padding-top: 1rem; }
 
 .menu-word {
   display: -ms-flexbox;
@@ -608,15 +609,27 @@ a {
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
 
-header#masthead {
-  margin-top: -2rem; }
+#page {
+  margin-top: -3rem; }
 
 .nav-static {
   position: static;
-  color: white; }
+  color: white;
+  border: none; }
+  .nav-static a {
+    color: white; }
 
 .nav-static .site-title {
   background-image: url(../../images/inhabitent-logo-tent-white.svg); }
+
+.nav-static .logo {
+  z-index: 1000; }
+
+.nav-static .search-form {
+  z-index: 1000; }
+
+.nav-static .icon-search {
+  color: white; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -962,7 +975,7 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg") no-repeat;
   background-size: cover;
   height: 101vh;
-  margin-top: -2rem;
+  margin-top: -3rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1223,7 +1236,8 @@ a.read-more {
   display: none; }
 
 .page-id-22 .site-content {
-  width: 100%; }
+  width: 100%;
+  margin-top: -3rem; }
 
 .content-full-width {
   width: 100%;
@@ -1233,8 +1247,16 @@ a.read-more {
   width: 60%;
   margin: auto; }
 
+.page-id-22 .site-main {
+  padding: 2rem 0; }
+
 .page-id-22 h2 {
-  color: black; }
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 3px; }
 
 .about-hero {
   color: #fff;
