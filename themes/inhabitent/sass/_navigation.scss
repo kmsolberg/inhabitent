@@ -215,6 +215,9 @@ body {
 	a {
 		color: white;
 	}
+	a:hover {
+		color: $color_yellow-brand;
+	}
 }
 
 .nav-static .site-title {

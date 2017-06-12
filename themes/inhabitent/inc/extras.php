@@ -31,7 +31,7 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 // custom login for theme
 function my_custom_login_logo() {
      echo '<style type="text/css">                                                                   
-         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important; 
+         h1 a { background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg) !important; 
          background-size: contain !important; width: auto !important;}                            
      </style>';
 }

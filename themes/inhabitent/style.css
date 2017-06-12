@@ -618,6 +618,8 @@ body {
   border: none; }
   .nav-static a {
     color: white; }
+  .nav-static a:hover {
+    color: #f0e4d1; }
 
 .nav-static .site-title {
   background-image: url(../../images/inhabitent-logo-tent-white.svg); }
@@ -1288,7 +1290,7 @@ a.read-more {
   margin: auto; }
 
 .content-area {
-  padding-top: 5rem; }
+  padding-top: 9rem; }
 
 .widget-area {
   border-left: 1px solid #e1e1e1;
@@ -1296,7 +1298,7 @@ a.read-more {
   -ms-flex: 0 0 27%;
       flex: 0 0 27%;
   padding-top: 2rem;
-  margin-top: 2rem; }
+  margin-top: 6rem; }
 
 .widget li {
   list-style: none; }
@@ -1386,6 +1388,9 @@ i {
   font-size: 2.3rem;
   text-transform: uppercase; }
 
+.post-type-archive-product .content-area {
+  padding-top: 5rem; }
+
 .product-grid {
   list-style: none;
   margin: 0;
@@ -1462,6 +1467,9 @@ i {
   overflow: hidden;
   text-align: center;
   letter-spacing: 2px; }
+
+.tax-product-type .content-area {
+  padding-top: 5rem; }
 
 .content-area {
   width: 100%; }
@@ -1609,6 +1617,9 @@ fieldset {
 
 .page-id-33 .wpcf7-submit:hover {
   background-color: #19625d; }
+
+.page-id-33 .site-header {
+  padding-top: 1.4rem; }
 
 .single-adventure .adventure {
   display: initial;
