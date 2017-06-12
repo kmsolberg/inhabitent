@@ -156,21 +156,21 @@ a {
 	color: $color_green_brand;
 }
 
-.search-submit{
+.search-submit {
 	display: inline;
 }
 
-.search-form{
-	fieldset{
+.search-form {
+	fieldset {
 	border: none;
 	}
-	input{
+	input {
 		border: none;
 		outline: none;
 	}
 }
 
-.menu {
+.menu  {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -179,7 +179,7 @@ a {
 	align-items: baseline;
 }
 
-.site-title{
+.site-title {
     height: 3rem;
     width: 3rem;
     align-self: center;
@@ -188,7 +188,7 @@ a {
 		background-size: 3rem 2.6rem;
 }
 
-.site-header{
+.site-header {
 	position: fixed;
 	background:rgba(255,255,255, 0.9);
 	width: 100%;
@@ -197,7 +197,7 @@ a {
 	padding-top: 1rem;
 }
 
-.menu-word{
+.menu-word {
 	display: flex;
 	flex-flow: row nowrap;
 }

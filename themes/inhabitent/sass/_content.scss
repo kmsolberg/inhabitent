@@ -17,7 +17,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -54,44 +54,44 @@
 	display: block;
 }
 
-.comment-body{
+.comment-body {
 	display: flex;
 }
 
-.comment-list{
+.comment-list {
 	margin: 0;
 	padding: 0;
 }
 
-.comment-author{
+.comment-author {
 	font-weight: bold;
 	font-family: $font__main;
-	cite{
+	cite {
 		font-style: normal;
 	}
 }
 
-.comment-metadata{
+.comment-metadata {
 	color: gray;	
 }
 
-.comment-meta p{
+.comment-meta p {
 		margin-bottom: 1rem;
 }
 
-.comment-author-avatar{
+.comment-author-avatar {
 	margin-right: 2rem;
 
-	img{
+	img {
 		border-radius: 35px;
 	}
 }
 
-.reply{
+.reply {
 	margin-bottom: 2rem;
 }
 
-.children li{
+.children li {
 	@include comment-border;
 }
 
@@ -99,40 +99,40 @@
 	@include comment-border;
 }
 
-.comment-respond{
+.comment-respond {
 	@include comment-border;
 	padding-top: 0;
-	h3{
+	h3 {
 		font-size: 1.7rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 	}
 }
 
-.comment-form label{
+.comment-form label {
 	line-height: 1rem;
 }
 
-.comment-form-comment{
+.comment-form-comment {
 	font-family: $font_accent;
 	color: black;
 	font-size: 1.1rem;
 	text-transform: uppercase;
 }
 
-.comment-form-author{
+.comment-form-author {
 	@include comment-form;
 	width: 23rem;	
 	float: left;
 }
 
-.comment-form-email{
+.comment-form-email {
 	@include comment-form;
 	width: 23rem;
 	float: right;
 }
 
-.comment-form-url{
+.comment-form-url {
 	@include comment-form;
 	clear: both;
 }
@@ -162,15 +162,15 @@
 	padding-top: 3rem;
 }
 
-.footer-lists{
+.footer-lists {
 	display: flex;
-	ul{
+	ul {
 		padding: 0;
 		margin: 0;
 	}
 }
 
-.contact-info{
+.contact-info {
 	padding-right: 2rem !important;
 	a {
 		text-decoration: none;
@@ -183,32 +183,32 @@
 	align-self: flex-start;
 }
 
-.copyright{
+.copyright {
 	text-align: center;
 	color: #fff;
 	font-family: $font_accent;
 	padding-top: 2rem;
 }
 
-.social-media{
+.social-media {
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
 	font-family: $font_accent;
 	width: 20rem;
-	i{
+	i {
 		padding: 0;
 	}
-	p{
+	p {
 		@include black-button;
 		
-		&:hover{
+		&:hover {
 		background: $color_green_brand;
 		color: white;
 		}	
 	}
 }
 
-.media-buttons .fa{
+.media-buttons .fa {
 	font-size: 1.4rem;
 }

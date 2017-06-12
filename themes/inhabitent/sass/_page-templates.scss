@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-.hero{
+.hero {
 	background: linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4)), url("../../images/home-hero.jpg") no-repeat;
 	background-size: cover;
 	height: 101vh;
@@ -160,6 +160,7 @@ a.read-more{
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-bottom: 34rem;
 }
 
 .adventure-posts li {
@@ -174,12 +175,15 @@ a.read-more{
   a {
     color: white;
   }
+  a:hover {
+    color: $color_yellow-brand;
+  }
   & .white-button{
     margin: 1rem;
   }
 }
 
-.adventure-posts li:first-child{
+.adventure-posts li:first-child {
   width: 50%;
   height: 33.55rem;
   border-right: 20px solid white;
@@ -204,7 +208,7 @@ a.read-more{
   }
 }
 
-.adventure-posts li:nth-child(2){
+.adventure-posts li:nth-child(2) {
   width: 50%;
   height: 16.78rem;
   border-bottom: 20px solid white;
@@ -223,7 +227,7 @@ a.read-more{
     left: 0;
     transform: translate(-9%,7%);
   }
-  h2{
+  h2 {
     font-size: 2.5rem;
     line-height: 3.2rem;
   }
@@ -290,42 +294,45 @@ a.read-more{
   position: relative;
 }
 
-.adventure-button{
+.adventure-button {
   clear: both;
   display: block;
   background: $color_green_brand;
   text-transform: uppercase;
   font-family: $font_accent;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   width: 15rem;
   margin: 2rem 0 4rem;
   text-align: center;
   font-size: 1.2rem;
-  a{
+  a {
     color: white;
     display: block;
     clear: both;
-    padding-top: 1rem;
+    padding: 1rem 0;
+  }
+  p {
+    margin: 0;
   }
 }
 
 
 /* About*/
-.post-22 .entry-title{
+.post-22 .entry-title {
   display: none;
 }
 
-.page-id-22 .site-content{
+.page-id-22 .site-content {
   width: 100%;
   margin-top: -3rem;
 }
 
-.content-full-width{
+.content-full-width {
   width: 100%;
   float: none;
 }
 
-#main-about{
+#main-about {
   width: 60%;
   margin: auto;
 }
@@ -334,7 +341,7 @@ a.read-more{
   padding: 2rem 0;
 }
 
-.page-id-22 h2{
+.page-id-22 h2 {
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -343,7 +350,7 @@ a.read-more{
   letter-spacing: 3px;
 }
 
-.about-hero{
+.about-hero {
   color: #fff;
   background: linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4));
   display: flex;
@@ -367,7 +374,7 @@ a.read-more{
 
 /* SIDEBAR */
 
-.site-content{
+.site-content {
   display: flex;
   width: 1120px;
   margin: auto;
@@ -377,7 +384,7 @@ a.read-more{
   padding-top: 9rem;
 }
 
-.widget-area{
+.widget-area {
   border-left: $border_grey;
   padding-left: 3rem;
   flex: 0 0 27%;
@@ -385,16 +392,16 @@ a.read-more{
   margin-top: 6rem;
 }
 
-.widget li{
+.widget li {
   list-style: none;
 }
 
-.widget ul{
+.widget ul {
   padding: 0;
   margin: 0;
 }
 
-#secondary h2{
+#secondary h2 {
   color: black;
   font-weight: bold;
   font-family: $font_accent;
@@ -402,17 +409,17 @@ a.read-more{
   letter-spacing: 2px;
 }
 
-.aside#business-hours-2{
+.aside#business-hours-2 {
   line-height: 1rem;
 }
 
-i{
+i {
   padding-right: 1rem;
 }
 
 // JOURNAL PAGE
 
-.blog .entry-title, .single-post .entry-title{
+.blog .entry-title, .single-post .entry-title {
   background-color: $color_green_brand;
   display: inline-block;
   position: absolute;
@@ -426,13 +433,13 @@ i{
   color: white;
   margin: 0;
   text-align: left;
-  a{
+  a {
     text-decoration: none;
     color: white;
   }
 }
 
-.blog .site-main .entry-meta, .single-post .site-main .entry-meta{
+.blog .site-main .entry-meta, .single-post .site-main .entry-meta {
   background-color: $color_green_brand;
   position: absolute;
   color: white;
@@ -443,49 +450,49 @@ i{
   font-size: 1rem;
   right: 0rem;
   bottom: 0rem;
-  a{
+  a {
     color: white;
   }
 }
 
-.blog .entry-header, .single-post .entry-header{
+.blog .entry-header, .single-post .entry-header {
   height: 32rem;
   position: relative;
-  img{
+  img {
     width: 100%;
     height: 32rem;
     background-size: cover;
   }
 }
 
-.blog .hentry, .single-post .hentry{
+.blog .hentry, .single-post .hentry {
   width: 48rem;
   margin-right: 3rem;
 }
 
-.blog .read-more{
+.blog .read-more {
   left: 0;
   bottom: 0.8rem;
   padding: 0.75rem 1.5rem;
 }
 
-.blog .entry-content{
+.blog .entry-content {
   margin-bottom: 4rem;
-  p{
+  p {
     margin-bottom: 2rem;
   }
 }
 
-.entry-footer{
+.entry-footer {
   text-transform: uppercase;
   font-family: $font_accent;
 }
 
-.cat-links{
+.cat-links {
     margin-right: 2rem;
 }
 
-.single-post h2{
+.single-post h2 {
   color: black;
   font-family: $font_accent;
   font-weight: bold;
@@ -495,11 +502,11 @@ i{
 
 // ARCHIVE-PRODUCT
 
-.post-type-archive-product .content-area {
+.post-type-archive-product .content-area  {
   padding-top: 5rem;
 }
 
-.product-grid{
+.product-grid {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -507,20 +514,20 @@ i{
   flex-flow: row wrap;
   flex: 0 1 24%;
   justify-content: space-between;
-  li{
+  li {
     border: $border_grey;
     margin-bottom: 2rem;
   }
 }
 
-.product-image{
+.product-image {
   width: 16rem;
   height: 16rem; 
   border-bottom: $border_grey_thick;
   position: relative;
   overflow: hidden;
   padding-bottom: 100%;
-  img{
+  img {
   display: block;
   height: 100%;
   width: auto;
@@ -534,48 +541,48 @@ i{
   } 
 }
 
-.category-links{
+.category-links {
   text-align: center;
   border-bottom: $border_dashed;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  ul{
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
   }
-  li{
+  li {
     margin: 0 1.5rem;
   }
 }
 
-.title-price{
+.title-price {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  p{
+  p {
     margin: 1rem 0;
     background: #fff;
   }
 }
 
-.price{
+.price {
   background: #fff;
 }
 
-.elipses{
-    position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   z-index: -1;
-   overflow: hidden;
-   text-align: center;
-   letter-spacing: 2px;
+.elipses {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 // TAXONOMY-PRODUCT-PHP
@@ -584,59 +591,59 @@ i{
   padding-top: 5rem;
 }
 
-.content-area{
+.content-area {
   width: 100%;
 }
 
-.taxonomy-description{
+.taxonomy-description {
   text-align: center;
   border-bottom: $border_dashed;
 }
 
-.tax-product-type .product-grid{
+.tax-product-type .product-grid {
   margin: 3rem 0;
 }
 
-.single-product h2{
+.single-product h2 {
   color: black;
   line-height: normal;
   margin: 0;
 }
 
-.type-product{
+.type-product {
   display: flex;
   justify-content: space-between;
 }
 
-.single-product{
-  .content-area{
+.single-product {
+  .content-area {
     margin-bottom: 3rem;
   }
-  h1{
+  h1 {
     color: $color_orange_brand;
     text-align: left;
     margin: 0;
     font-weight: bold;
     line-height: normal;
   }
-  .entry-header{
+  .entry-header {
     flex: 0 0 47%;
     height: 25rem;
     position: relative;
     overflow: hidden;
     padding-bottom: none;
-    img{
-    display: block;
-    height: 100%;
-    width: auto;
-    max-width: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      max-width: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
-  .entry-content{
+  .entry-content {
     flex: 0 0 47%;
     margin: 0;
   }
@@ -644,13 +651,13 @@ i{
 
 //404 PAGE//
 
-.error404{
-  h1{
+.error404 {
+  h1 {
     font-weight: bold;
     text-align: left;
     margin: 0;
   }
-  h2{
+  h2 {
     color: black;
     text-transform: uppercase;
     font-family: $font_accent;
@@ -660,8 +667,8 @@ i{
 }
 
 //SEARCH PAGE//
-.search-results, .search-no-results{
-  h1{
+.search-results, .search-no-results {
+  h1 {
     text-align: left;
     margin: 0;
     font-weight: bold;
@@ -673,26 +680,26 @@ i{
   }
 }
 
-fieldset{
+fieldset {
   margin: 0;
   padding: 0;
 }
-.site-main .search-field{
+.site-main .search-field {
   display: initial;
 }
-.page-content .search-submit{
+.page-content .search-submit {
   display: none;
 }
 
-.search-results .type-product{
+.search-results .type-product {
   display: initial;
 }
 
-.search-results{
-  .read-more{
+.search-results {
+  .read-more {
     position: initial;
   }
-  h2{
+  h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-family: $font_accent;
@@ -700,63 +707,63 @@ fieldset{
   font-size: 2.1rem;
   line-height: 2rem;
   }
-  .content-area{
+  .content-area {
     margin-right: 4rem;
   }
 }
 
-.search-pagination{
+.search-pagination {
   border-top: $border_grey;
   padding: 2rem 0 5rem 0;
   text-transform: uppercase;
   font-family: $font-accent;
-  a{
+  a {
     color: white;
   }
 }
 
-.page-numbers{
+.page-numbers {
   color: white;
   padding: .2rem 0.7rem;
   background-color: $color_green-brand;
-  &:hover{
+  &:hover {
     background-color: $color_purple_brand;
   }
 }
 
-.current{
+.current {
   background-color: $color_grey-medium-brand;
   padding: .2rem 0.7rem;
-  &:hover{
+  &:hover {
     background-color: $color_grey_medium_brand;
   }
 }
 
 //FIND US
 
-.page-id-33{
-  h1{
+.page-id-33 {
+  h1 {
     text-align: left;
     font-weight: bold;
     margin: 0;
   }
-  .content-area{
+  .content-area {
     margin-right: 4rem;
   }
-  h3{
+  h3 {
     text-transform: uppercase;
     color: $color_purple_brand;
     font-size: 2.3rem;
     margin: 0;
   }
-  p{
+  p {
     margin-bottom: 0;
   }
-  .wpcf7{
+  .wpcf7 {
     font-family: $font_accent;
     font-size: 1.1rem;
   }
-  .wpcf7-submit:hover{
+  .wpcf7-submit:hover {
     background-color: #19625d;
   }
   .site-header {

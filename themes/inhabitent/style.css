@@ -1109,7 +1109,8 @@ a.read-more {
 .adventure-section ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 34rem; }
 
 .adventure-posts li {
   float: left;
@@ -1121,6 +1122,8 @@ a.read-more {
     padding: 0 1rem; }
   .adventure-posts li a {
     color: white; }
+  .adventure-posts li a:hover {
+    color: #f0e4d1; }
   .adventure-posts li .white-button {
     margin: 1rem; }
 
@@ -1222,7 +1225,7 @@ a.read-more {
   background: #248A83;
   text-transform: uppercase;
   font-family: "novecento sans web";
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   width: 15rem;
   margin: 2rem 0 4rem;
   text-align: center;
@@ -1231,7 +1234,9 @@ a.read-more {
     color: white;
     display: block;
     clear: both;
-    padding-top: 1rem; }
+    padding: 1rem 0; }
+  .adventure-button p {
+    margin: 0; }
 
 /* About*/
 .post-22 .entry-title {
